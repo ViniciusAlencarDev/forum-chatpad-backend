@@ -1,3 +1,4 @@
+const connection = require('../database/connection')
 
 const responseModel = {
     success: false,
@@ -9,6 +10,10 @@ module.exports = {
 
     async create(req, res) {
         const response = {...responseModel}
+
+        // const [, data] = await connection.query(`
+           
+        // `);
 
         return res.json(response)
     },
