@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "toor",
-    "database": "forumchatpad",
-    "host": "172.17.0.2",
+    "password": "",
+    "database": "",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
