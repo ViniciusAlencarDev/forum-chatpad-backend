@@ -37,7 +37,7 @@ module.exports = {
         const response = {...responseModel}
 
         const [, data] = await connection.query(`
-            SELECT id FROM users LIMIT 1000
+            SELECT id FROM users LIMIT 50
         `);
 
         if(data) {
