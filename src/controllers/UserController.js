@@ -33,6 +33,21 @@ module.exports = {
         return res.json(response)
     },
 
+    async list(req, res) {
+        const response = {...responseModel}
+
+        const [, data] = await connection.query(`
+            SELECT id FROM users
+        `);
+
+        if(data) {
+            response.success = true
+            response.data = data
+        }
+
+        return res.json(response)
+    },
+
     async login(req, res) {
         const response = {...responseModel}
 
